@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Külgharja kalkulaator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="translate.js"></script>    
+</head>
+<body>
+    <div class="translation">
+        <button id="est" class="translate">Eesti</button>
+        <button id="eng" class="translate">English</button>
+        <button id="ger" class="translate">Deutch</button>
+        <button id="fin" class="translate">Suomi</button>
+    </div>
+    <div id="header" class="lang" key="head">Külgharja programm</div>
+    <div class="container" id="container">
+        <div class="box1">
+            <h3 class="lang title" key="labelA">Põhimuutujad</h3>
+            <fieldset class="fieldset1">
+                <legend class="lang" key="legendA">Nõutud lähteandmed:</legend>
+                <input class="input" type="text" id="a-field" maxlength="4">
+                <label for="a-field" class="lang" key="variableA">A: ketta/sektori läbimõõt(mm)</label><br><br>
+                <input class="input" type="text" id="b-field" maxlength="2">
+                <label for="b-field" class="lang" key="variableB">B: auguridade arv</label><br><br>
+                <input class="input" type="text" id="c-field" maxlength="2">
+                <label for="c-field" class="lang" key="variableC">C: kinnituspoltide arv</label><br><br>
+                <input class="input" type="text" id="d-field" maxlength="4">
+                <label for="d-field" class="lang" key="variableD">D: poltide rea läbimõõt(mm)</label><br>
+            </fieldset><br>
+            <fieldset class="fieldset2">
+                <legend class="lang" key="legendB">Sektori lähteandmed:</legend>
+                <input class="input" type="text" id="e-field" maxlength="3">
+                <label for="e-field" class="lang" key="variableE">E: sektori algusnurk</label><br><br>
+                <input class="input" type="text" id="f-field" maxlength="3">
+                <label for="f-field" class="lang" key="variableF">F: sektori lõppnurk</label><br><br>
+                <input class="input" type="text" id="g-field" maxlength="3">
+                <label for="g-field" class="lang" key="variableG">G: esimese poldi nurk</label><br><br>
+                <input class="input" type="text" id="h-field" maxlength="3">
+                <label for="h-field" class="lang" key="variableH">H: teise poldi nurk</label><br>
+            </fieldset>
+        </div>
+        <div class="box2">
+            <h3 class="title lang" key="labelB">Valikulised muutujad:</h3>
+            <fieldset class="fieldset3">
+                <legend class="lang" key="legendC">Valikulised lähteandmed:</legend>
+                <input class="input" type="text" id="i-field" placeholder="40" maxlength="3">
+                <label for="i-field" class="lang" key="variableI">I: augupaaride vahe</label>
+                <div class="lang" key="defaultA">(vaikimisi 40 mm)</div><br>
+                <input class="input" type="text" id="j-field" placeholder="60" maxlength="3">
+                <label for="j-field" class="lang" key="variableJ">J: ketta ja välimise aukude rea vahe</label>
+                <div class="lang" key="defaultB">(vaikimisi 60 mm)</div><br>
+                <input class="input" type="text" id="k-field" placeholder="40" maxlength="3">
+                <label for="k-field" class="lang" key="variableK">K: puuritavate auguridade vahe</label>
+                <div class="lang" key="defaultC">(vaikimisi 40 mm)</div><br>
+                <input class="input" type="text" id="l-field" placeholder="30" maxlength="3">
+                <label for="l-field" class="lang" key="variableL">L: augurea alguse kaugus kinnituspoldist</label>
+                <div class="lang" key="defaultD">(vaikimisi 30 mm)</div><br>
+                <input class="input" type="text" id="m-field" placeholder="64" maxlength="3">
+                <label for="m-field" class="lang" key="variableM">M: poldirea kaugus sellest väiksemast augureast</label>
+                <div class="lang" key="defaultE">(vaikimisi 64 mm)</div><br>
+                <input class="input" type="text" id="n-field" placeholder="35" maxlength="3">
+                <label for="n-field" class="lang" key="variableN">N: poldirea kaugus sellest suuremast augureast</label>
+                <div class="lang" key="defaultF">(vaikimisi 35 mm)</div><br>
+            </fieldset>
+        </div>
+        <div class="box3">
+            <h3 class="title lang" key="labelC">Väljund</h3>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+<srcipt type="text/javascript" src="translation.js"></srcipt>
+</html>
