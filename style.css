@@ -10,7 +10,10 @@ body {
     color: white;
     margin: 22px;
 }
-fieldset {
+button{
+	background-color: springgreen;
+}
+fieldset, button {
     border-radius: 18px;
     border: 1px solid;
     padding: 10px;
